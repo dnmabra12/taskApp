@@ -67,7 +67,6 @@ func listTasks(fileName string) error {
 	return nil
 }
 
-// Removal of tasks
 func removeTask(identifier string, fileName string, byName bool) error {
 	if err := loadTasks(fileName); err != nil {
 		return err
