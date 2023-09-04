@@ -9,7 +9,7 @@ func TestAddTask(t *testing.T) {
 	fileName := "test_tasks.json"
 	defer os.Remove(fileName)
 
-	if err := createFile(fileName); err == nil {
+	if err := createFile(fileName); err != nil {
 		t.Fatalf("Failed to set up test: %v", err)
 	}
 
